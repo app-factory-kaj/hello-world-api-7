@@ -1,0 +1,15 @@
+{
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "statement": "An API Consumer can call a single public HTTP endpoint and receive a static \"Hello, World!\" greeting",
+      "stories": [1],
+      "criteria": [
+        { "id": "AC-001-a", "must": "Calling the endpoint without any credentials succeeds", "method": "e2e" },
+        { "id": "AC-001-b", "must": "The endpoint responds with a successful HTTP status", "method": "e2e" },
+        { "id": "AC-001-c", "must": "The response body contains a static greeting message", "method": "e2e" },
+        { "id": "AC-001-d", "must": "The greeting message is identical across repeated calls regardless of input", "method": "e2e" }
+      ]
+    }
+  ]
+}

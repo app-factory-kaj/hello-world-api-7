@@ -1,0 +1,7 @@
+title Hello World API
+
+phase 1
+
+component hello-api as "Hello World API" service [stories: 1]
+
+north -> hello-api
